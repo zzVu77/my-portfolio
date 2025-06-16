@@ -24,10 +24,12 @@ const Introduction = ({ description, title }: Props) => {
             </p>
           </div>
           {/* button */}
-          <div className="flex justify-center md:justify-start items-center gap-4">
-            <Button className="cursor-pointer h-[54px] w-max rounded-full px-10 bg-gradient-custom">
-              Contact me
-              <ArrowUpRight />
+          <div className="flex justify-center md:justify-start items-center gap-4 w-full">
+            <Button className="cursor-pointer h-[54px] w-max rounded-full bg-gradient-custom">
+              <div className="flex flex-row items-center gap-2 px-3">
+                <p className="font-semibold uppercase text-md">Contact me</p>
+                <ArrowUpRight />
+              </div>
             </Button>
             <Button className="cursor-pointer rounded-full w-[54px] h-[54px] bg-gradient-custom">
               <Image
