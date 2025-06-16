@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { ASSSETS } from "../../../assets";
-import { Button } from "./button";
+import { ASSSETS } from "../../assets";
+import { Button } from "./ui/button";
 import { ArrowUpRight } from "lucide-react";
 
 type Props = {
@@ -24,29 +24,31 @@ const Introduction = ({ description, title }: Props) => {
             </p>
           </div>
           {/* button */}
-          <div className="flex justify-center md:justify-start items-center gap-4 w-full">
+          <div className="flex flex-col justify-center md:flex-row md:justify-start items-center gap-4 w-full">
             <Button className="cursor-pointer h-[54px] w-max rounded-full bg-gradient-custom">
               <div className="flex flex-row items-center gap-2 px-3">
                 <p className="font-semibold uppercase text-md">Contact me</p>
                 <ArrowUpRight />
               </div>
             </Button>
-            <Button className="cursor-pointer rounded-full w-[54px] h-[54px] bg-gradient-custom">
-              <Image
-                src={ASSSETS.LINKED_LOGO}
-                alt="linked logo"
-                height={32}
-                width={32}
-              ></Image>
-            </Button>
-            <Button className="cursor-pointer rounded-full w-[54px] h-[54px] bg-gradient-custom">
-              <Image
-                src={ASSSETS.GITHUB_LOGO}
-                alt="linked logo"
-                height={32}
-                width={32}
-              ></Image>
-            </Button>
+            <div className="flex flex-row gap-4">
+              <Button className="cursor-pointer rounded-full w-[54px] h-[54px] bg-gradient-custom">
+                <Image
+                  src={ASSSETS.LINKED_LOGO}
+                  alt="linked logo"
+                  height={32}
+                  width={32}
+                ></Image>
+              </Button>
+              <Button className="cursor-pointer rounded-full w-[54px] h-[54px] bg-gradient-custom">
+                <Image
+                  src={ASSSETS.GITHUB_LOGO}
+                  alt="linked logo"
+                  height={32}
+                  width={32}
+                ></Image>
+              </Button>
+            </div>
           </div>
         </div>
         {/* image */}
