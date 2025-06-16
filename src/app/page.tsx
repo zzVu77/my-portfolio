@@ -1,7 +1,11 @@
+import Introduction from "@/components/ui/Introduction";
+
 export default function Home() {
   return (
     <>
-      <div className="bg-black">Hello World</div>
+      <div className="">
+        <Introduction></Introduction>
+      </div>
     </>
   );
 }
