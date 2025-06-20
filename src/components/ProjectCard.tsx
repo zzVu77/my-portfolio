@@ -36,7 +36,7 @@ const ProjectCard = ({
         <CardContent className="flex flex-col items-center  lg:flex-row gap-10 p-0">
           <div
             className={cn(
-              "bg-card-bg p-10 flex justify-center items-center rounded-2xl h-auto w-full lg:min-w-[400px] max-w-[600px]",
+              "bg-card-bg p-6 flex justify-center items-center rounded-xl h-auto w-full lg:min-w-[400px] max-w-[600px]",
               reverse === true && "lg:order-1"
             )}
           >
@@ -48,7 +48,7 @@ const ProjectCard = ({
               width={486}
               height={347}
               alt="project-img"
-              className="rounded-xl w-full h-auto object-contain"
+              className="rounded-2xl w-full h-auto object-contain"
             ></Image>
           </div>
           {/* Detail of project */}

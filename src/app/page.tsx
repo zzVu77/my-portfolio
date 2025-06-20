@@ -36,7 +36,10 @@ export default function Home() {
       <Wrapper
         title="My PROJECTS"
         description="Here are some of the selected projects that showcase my passion for web application development."
-        classNames={{ title: "text-gradient-orange " }}
+        classNames={{
+          title: "text-gradient-orange ",
+          container: "gap-[50px] lg:gap-[80px]",
+        }}
       >
         <ProjectCard
           reverse={false}
