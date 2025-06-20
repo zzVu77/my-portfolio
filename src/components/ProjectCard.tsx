@@ -139,10 +139,10 @@ const ProjectCard = ({
                 >
                   <Button
                     variant={"ghost"}
-                    className="cursor-pointer uppercase bg-gradient-hover"
+                    className="cursor-pointer uppercase bg-gradient-hover font-bold"
                   >
                     Live demo
-                    <MoveUpRight size={24} />
+                    <MoveUpRight />
                   </Button>
                 </Link>
               )}
@@ -154,10 +154,10 @@ const ProjectCard = ({
                 >
                   <Button
                     variant={"ghost"}
-                    className="cursor-pointer uppercase bg-gradient-hover"
+                    className="cursor-pointer uppercase bg-gradient-hover font-bold"
                   >
                     See on GitHub
-                    <Github size={24} />
+                    <Github />
                   </Button>
                 </Link>
               )}

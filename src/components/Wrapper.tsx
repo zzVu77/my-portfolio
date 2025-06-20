@@ -25,28 +25,31 @@ const Wrapper: React.FC<WrapperProps> = ({
         classNames?.container
       )}
     >
-      <div className="max-w-[600px] flex flex-col items-center gap-2 justify-center">
-        {title && (
-          <h2
-            className={cn(
-              "text-white text-[26px] font-extrabold text-center uppercase",
-              classNames?.title
-            )}
-          >
-            {title}
-          </h2>
-        )}
-        {description && (
-          <p
-            className={cn(
-              "font-[200] text-[16px] text-center text-white",
-              classNames?.desc
-            )}
-          >
-            {description}
-          </p>
-        )}
-      </div>
+      {title && (
+        <div className="max-w-[600px] flex flex-col items-center gap-2 justify-center">
+          {title && (
+            <h2
+              className={cn(
+                "text-white text-[26px] font-extrabold text-center uppercase",
+                classNames?.title
+              )}
+            >
+              {title}
+            </h2>
+          )}
+          {description && (
+            <p
+              className={cn(
+                "font-[200] text-[16px] text-center text-white",
+                classNames?.desc
+              )}
+            >
+              {description}
+            </p>
+          )}
+        </div>
+      )}
+
       {children}
     </div>
   );

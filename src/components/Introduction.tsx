@@ -10,21 +10,21 @@ type Props = {
 const Introduction = ({ description, title }: Props) => {
   return (
     <>
-      <div className="flex flex-col justify-center items-center md:flex-row md:justify-around  ">
+      <div className="flex flex-col justify-center items-center lg:flex-row lg:justify-around w-full ">
         {/* Content */}
-        <div className="flex gap-4 flex-col xs:items-center xs:justify-center order-2 md:order-1 w-full md:max-w-[500px] ">
+        <div className="flex gap-4 flex-col xs:items-center xs:justify-center order-2 lg:order-1 w-full lg:max-w-[550px] ">
           {/* Text */}
           <div>
-            <h1 className="text-[76px] text-center md:text-start font-extrabold text-white uppercase">
+            <h1 className="text-[76px] text-center lg:text-start font-extrabold text-white uppercase">
               {title || "hi, i am vu"}
             </h1>
-            <p className=" text-white text-center md:text-start font-[200] text-[14px] w-full">
+            <p className=" text-white text-center lg:text-start font-[200] text-[14px] w-full">
               {description ||
                 "I am a software engineer with a passion for building web applications and exploring new technologies. I love creating efficient and scalable solutions that enhance user experiences. I am a software engineer with a passion for building web applications and exploring new technologies. I love creating efficient and scalable solutions that enhance user experiences "}
             </p>
           </div>
           {/* button */}
-          <div className="flex flex-col justify-center md:flex-row md:justify-start items-center gap-4 w-full">
+          <div className="flex flex-col justify-center lg:flex-row lg:justify-start items-center gap-4 w-full">
             <Button className="cursor-pointer h-[54px] w-max rounded-full bg-gradient-custom">
               <div className="flex flex-row items-center gap-2 px-3">
                 <p className="font-semibold uppercase text-md">Contact me</p>
@@ -53,7 +53,7 @@ const Introduction = ({ description, title }: Props) => {
         </div>
         {/* image */}
         <Image
-          className="order-1 md:order-2"
+          className="order-1 lg:order-2"
           src={ASSSETS.AVATAR}
           width={300}
           height={400}
