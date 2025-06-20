@@ -5,6 +5,7 @@ import { Card, CardContent } from "./ui/card";
 import { Github, MoveUpRight } from "lucide-react";
 import { Button } from "./ui/button";
 import { cn } from "@/lib/utils";
+
 type Props = {
   title?: string;
   description?: string;
@@ -32,10 +33,10 @@ const ProjectCard = ({
   return (
     <>
       <Card className="bg-black p-0 m-0 border-0">
-        <CardContent className="flex flex-col items-center lg:flex-row gap-10 p-0">
+        <CardContent className="flex flex-col items-center lg:items-start lg:flex-row gap-10 p-0">
           <div
             className={cn(
-              "bg-card-bg p-10 flex justify-center items-center rounded-2xl h-auto w-full lg:min-w-[486px]",
+              "bg-card-bg p-10 flex justify-center items-center rounded-2xl h-auto w-full lg:min-w-[400px] max-w-[600px]",
               reverse === true && "lg:order-1"
             )}
           >
@@ -57,7 +58,7 @@ const ProjectCard = ({
                 <h2 className="text-2xl font-extrabold uppercase">
                   {title || "Promotional landing page for our favorite show"}
                 </h2>
-                <p className="text-[#C7C7C7] text-md ">
+                <p className="text-description-text text-md ">
                   {description ||
                     `Teamed up with a designer to breathe life into a promotional
                   webpage for our beloved show, Adventure Time. Delivered a
@@ -73,20 +74,20 @@ const ProjectCard = ({
                 <div className="flex flex-col gap-3">
                   {/* Duration */}
                   <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-2 lg:gap-0">
-                    <p>Duration</p>
-                    <Badge className="text-white text-sm bg-card-bg py-1">
+                    <p className="text-description-text">Duration</p>
+                    <Badge className="text-description-text text-sm bg-card-bg py-1">
                       {duration || "  04/2025 - 06/2025"}
                     </Badge>
                   </div>
                   <hr />
                   {/* Tech Stack */}
                   <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-2 lg:gap-0">
-                    <p>Tech Stack</p>
+                    <p className="text-description-text">Tech Stack</p>
                     <div className="flex flex-row flex-wrap items-center justify-between gap-2">
                       {techStack?.map((tech, index) => (
                         <Badge
                           key={index}
-                          className="text-white text-sm bg-card-bg py-1"
+                          className="text-description-text text-sm bg-card-bg py-1"
                         >
                           {tech || "React"}
                         </Badge>
@@ -96,23 +97,28 @@ const ProjectCard = ({
                   <hr />
                   {/* Role */}
                   <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-2 lg:gap-0">
-                    <p>Role</p>
-                    {roles?.map((role, index) => (
-                      <Badge
-                        key={index}
-                        className="text-white text-sm bg-card-bg py-1"
-                      >
-                        {role || "Frontend Developer"}
-                      </Badge>
-                    ))}
+                    <p className="text-description-text">Role</p>
+                    <div className="flex flex-row flex-wrap items-center justify-between gap-2">
+                      {roles?.map((role, index) => (
+                        <Badge
+                          key={index}
+                          className="text-description-text text-sm bg-card-bg py-1"
+                        >
+                          {role || "Frontend Developer"}
+                        </Badge>
+                      ))}
+                    </div>
                   </div>
                   <hr />
                   {/* Key achievements */}
                   <div className="flex flex-col  items-start  justify-start gap-2 lg:gap-0">
-                    <p>Key achievements</p>
+                    <p className="text-description-text">Key achievements</p>
                     <ul className="list-disc list-inside marker:text-white">
                       {keyAchievements?.map((achievement, index) => (
-                        <li key={index} className="text-white text-sm">
+                        <li
+                          key={index}
+                          className="text-description-text text-sm"
+                        >
                           {achievement ||
                             `  Collaborated with a designer to create a visually
                           appealing and user-friendly landing page.`}
