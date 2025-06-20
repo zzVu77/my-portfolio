@@ -47,9 +47,6 @@ const techData = [
 const Techs = () => {
   return (
     <div className="flex flex-col justify-center items-center gap-10">
-      <h2 className="text-white text-[26px] font-bold text-center">
-        EXPERIENCE WITH
-      </h2>
       <div className="flex flex-row flex-wrap justify-center items-center gap-10 w-full">
         {techData.map((tech) => (
           <div key={tech.name} className="flex items-center gap-4">

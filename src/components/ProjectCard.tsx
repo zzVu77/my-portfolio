@@ -33,7 +33,7 @@ const ProjectCard = ({
   return (
     <>
       <Card className="bg-black p-0 m-0 border-0">
-        <CardContent className="flex flex-col items-center lg:items-start lg:flex-row gap-10 p-0">
+        <CardContent className="flex flex-col items-center  lg:flex-row gap-10 p-0">
           <div
             className={cn(
               "bg-card-bg p-10 flex justify-center items-center rounded-2xl h-auto w-full lg:min-w-[400px] max-w-[600px]",
@@ -83,7 +83,7 @@ const ProjectCard = ({
                   {/* Tech Stack */}
                   <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-2 lg:gap-0">
                     <p className="text-description-text">Tech Stack</p>
-                    <div className="flex flex-row flex-wrap items-center justify-between gap-2">
+                    <div className="flex flex-row flex-wrap items-center justify-start gap-2">
                       {techStack?.map((tech, index) => (
                         <Badge
                           key={index}
@@ -98,7 +98,7 @@ const ProjectCard = ({
                   {/* Role */}
                   <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-2 lg:gap-0">
                     <p className="text-description-text">Role</p>
-                    <div className="flex flex-row flex-wrap items-center justify-between gap-2">
+                    <div className="flex flex-row flex-wrap items-center justify-start gap-2">
                       {roles?.map((role, index) => (
                         <Badge
                           key={index}
@@ -113,11 +113,11 @@ const ProjectCard = ({
                   {/* Key achievements */}
                   <div className="flex flex-col  items-start  justify-start gap-2 lg:gap-0">
                     <p className="text-description-text">Key achievements</p>
-                    <ul className="list-disc list-inside marker:text-white">
+                    <ul className="list-disc list-inside marker:text-white ">
                       {keyAchievements?.map((achievement, index) => (
                         <li
                           key={index}
-                          className="text-description-text text-sm"
+                          className="text-description-text text-sm mt-2"
                         >
                           {achievement ||
                             `  Collaborated with a designer to create a visually

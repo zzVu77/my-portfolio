@@ -1,6 +1,7 @@
 import Introduction from "@/components/Introduction";
 import ProjectCard from "@/components/ProjectCard";
 import Techs from "@/components/Techs";
+import Wrapper from "@/components/Wrapper";
 const dummyProject = {
   title: "Adventure Time Landing Page",
   description:
@@ -23,9 +24,20 @@ const dummyProject = {
 export default function Home() {
   return (
     <>
-      <div className="px-8 md:px-20 flex flex-col gap-10">
+      <Wrapper classNames={{ container: "lg:pb-[80px]" }}>
         <Introduction></Introduction>
+      </Wrapper>
+      <Wrapper
+        title="EXPERIENCE WITH"
+        classNames={{ title: "text-gradient-gray" }}
+      >
         <Techs></Techs>
+      </Wrapper>
+      <Wrapper
+        title="My PROJECTS"
+        description="Here are some of the selected projects that showcase my passion for web application development."
+        classNames={{ title: "text-gradient-orange " }}
+      >
         <ProjectCard
           reverse={false}
           title={dummyProject.title}
@@ -48,7 +60,7 @@ export default function Home() {
           liveDemoLink={dummyProject.liveDemoLink}
           reverse={true}
         ></ProjectCard>
-      </div>
+      </Wrapper>
     </>
   );
 }
