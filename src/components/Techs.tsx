@@ -56,7 +56,7 @@ const Techs = () => {
             <Image
               src={tech.icon}
               alt={`${tech.name} logo`}
-              className={`w-12 h-12 filter hover:scale-150 transition-all duration-500 cursor-pointer ${
+              className={`w-12 h-12 filter hover:scale-150 transition-all duration-80 cursor-pointer ${
                 tech.name === "NextJs"
                   ? "drop-shadow-[0_0_8px_#fff]"
                   : tech.name === "React"

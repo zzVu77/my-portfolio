@@ -1,6 +1,5 @@
 @import "tailwindcss";
 @import "tw-animate-css";
-
 @custom-variant dark (&:is(.dark *));
 @theme {
   /* --color-*	Color utilities like bg-red-500, text-sky-300, and many more */
