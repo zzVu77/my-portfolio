@@ -4,6 +4,7 @@ import { Badge } from "./ui/badge";
 import { Card, CardContent } from "./ui/card";
 import { Github, MoveUpRight } from "lucide-react";
 import { Button } from "./ui/button";
+import { cn } from "@/lib/utils";
 type Props = {
   title?: string;
   description?: string;
@@ -14,6 +15,7 @@ type Props = {
   liveDemoLink?: string;
   githubLink?: string;
   projectImage?: string;
+  reverse?: boolean;
 };
 const ProjectCard = ({
   title,
@@ -25,12 +27,18 @@ const ProjectCard = ({
   githubLink,
   liveDemoLink,
   projectImage,
+  reverse,
 }: Props) => {
   return (
     <>
       <Card className="bg-black p-0 m-0 border-0">
         <CardContent className="flex flex-col items-center lg:flex-row gap-10 p-0">
-          <div className="bg-card-bg p-10 flex justify-center items-center rounded-2xl h-auto w-full lg:min-w-[486px]">
+          <div
+            className={cn(
+              "bg-card-bg p-10 flex justify-center items-center rounded-2xl h-auto w-full lg:min-w-[486px]",
+              reverse === true && "lg:order-1"
+            )}
+          >
             <Image
               src={
                 projectImage ||
@@ -43,7 +51,7 @@ const ProjectCard = ({
             ></Image>
           </div>
           {/* Detail of project */}
-          <div className="flex flex-col items-center lg:items-start gap-8">
+          <div className="flex flex-col items-center lg:items-start gap-8 ">
             <div className="flex flex-col gap-8">
               <div className="flex flex-col gap-4">
                 <h2 className="text-2xl font-extrabold uppercase">
