@@ -89,7 +89,7 @@ export const experienceData = [
     description:
       "As a Frontend Developer, I was responsible for designing the entire layout structure of the landing page and developing it using Next.js, TypeScript, and MUI. I collaborated directly with the client's marketing team to align design, content, and user flow, delivering a clean, responsive, and conversion-focused B2B website. The project was completed over a 2-month period with continuous feedback and iterations.",
     duration: "02/2025 – 04/2025",
-    techStack: ["Next.js", "TypeScript", "MUI"],
+    techStack: ["Next.js", "React", "TypeScript", "MUI"],
     linkProducts: ["https://diennuochoangkim.vn/"],
   },
 ];
