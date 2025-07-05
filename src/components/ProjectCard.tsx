@@ -1,10 +1,10 @@
-import Image from "next/image";
-import Link from "next/link";
-import { Badge } from "./ui/badge";
-import { Card, CardContent } from "./ui/card";
-import { Github, MoveUpRight } from "lucide-react";
-import { Button } from "./ui/button";
 import { cn } from "@/lib/utils";
+import { Github, Link } from "lucide-react";
+import Image from "next/image";
+import { Badge } from "./ui/badge";
+import { Button } from "./ui/button";
+import { Card, CardContent } from "./ui/card";
+import { Tooltip, TooltipContent, TooltipTrigger } from "./ui/tooltip";
 
 type Props = {
   title?: string;
@@ -55,10 +55,10 @@ const ProjectCard = ({
           <div className="flex flex-col items-center lg:items-start gap-8 ">
             <div className="flex flex-col gap-8">
               <div className="flex flex-col gap-4">
-                <h2 className="text-2xl font-extrabold uppercase">
+                <h2 className="text-2xl font-[800] uppercase">
                   {title || "Promotional landing page for our favorite show"}
                 </h2>
-                <p className="text-description-text text-md ">
+                <p className="text-white text-md font-normal ">
                   {description ||
                     `Teamed up with a designer to breathe life into a promotional
                   webpage for our beloved show, Adventure Time. Delivered a
@@ -68,26 +68,26 @@ const ProjectCard = ({
                 </p>
               </div>
               <div>
-                <h3 className="uppercase text-[20px] font-bold">
+                <h3 className="uppercase text-[20px] font-[600]">
                   project info
                 </h3>
                 <div className="flex flex-col gap-3">
                   {/* Duration */}
                   <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-2 lg:gap-0">
-                    <p className="text-description-text">Duration</p>
-                    <Badge className="text-description-text text-sm bg-card-bg py-1">
+                    <p className="text-white/90 font-normal">Duration</p>
+                    <Badge className="text-white text-sm bg-card-bg py-1 font-bold hover:transition-transform hover:scale-105 cursor-pointer">
                       {duration || "  04/2025 - 06/2025"}
                     </Badge>
                   </div>
                   <hr />
                   {/* Tech Stack */}
                   <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-2 lg:gap-0">
-                    <p className="text-description-text">Tech Stack</p>
+                    <p className="text-white/90 font-normal">Tech Stack</p>
                     <div className="flex flex-row flex-wrap items-center justify-start gap-2">
                       {techStack?.map((tech, index) => (
                         <Badge
                           key={index}
-                          className="text-description-text text-sm bg-card-bg py-1"
+                          className="text-white text-sm bg-card-bg py-1 font-bold hover:transition-transform hover:scale-105 cursor-pointer"
                         >
                           {tech || "React"}
                         </Badge>
@@ -97,12 +97,12 @@ const ProjectCard = ({
                   <hr />
                   {/* Role */}
                   <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-2 lg:gap-0">
-                    <p className="text-description-text">Role</p>
+                    <p className="text-white/90">Role</p>
                     <div className="flex flex-row flex-wrap items-center justify-start gap-2">
                       {roles?.map((role, index) => (
                         <Badge
                           key={index}
-                          className="text-description-text text-sm bg-card-bg py-1"
+                          className="text-white text-sm bg-card-bg py-1 hover:transition-transform hover:scale-105 cursor-pointer font-bold"
                         >
                           {role || "Frontend Developer"}
                         </Badge>
@@ -112,13 +112,10 @@ const ProjectCard = ({
                   <hr />
                   {/* Key achievements */}
                   <div className="flex flex-col  items-start  justify-start gap-2 lg:gap-0">
-                    <p className="text-description-text">Key achievements</p>
+                    <p className="text-white/90">Key achievements</p>
                     <ul className="list-disc list-inside marker:text-white ">
                       {keyAchievements?.map((achievement, index) => (
-                        <li
-                          key={index}
-                          className="text-description-text text-sm mt-2"
-                        >
+                        <li key={index} className="text-white/85 text-sm  mt-2">
                           {achievement ||
                             `  Collaborated with a designer to create a visually
                           appealing and user-friendly landing page.`}
@@ -130,37 +127,49 @@ const ProjectCard = ({
               </div>
             </div>
             {/* Links */}
-            <div className="flex flex-row items-center justify-between gap-4">
-              {liveDemoLink && (
-                <Link
-                  href={liveDemoLink || "#"}
-                  target="_blank"
-                  className=" flex flex-row items-center gap-2 uppercase "
-                >
-                  <Button
-                    variant={"ghost"}
-                    className="cursor-pointer uppercase bg-gradient-hover font-bold"
-                  >
-                    Live demo
-                    <MoveUpRight />
-                  </Button>
-                </Link>
-              )}
-              {githubLink && (
-                <Link
-                  href={githubLink || "#"}
-                  target="_blank"
-                  className=" flex flex-row items-center gap-2 uppercase  "
-                >
-                  <Button
-                    variant={"ghost"}
-                    className="cursor-pointer uppercase bg-gradient-hover font-bold"
-                  >
-                    See on GitHub
-                    <Github />
-                  </Button>
-                </Link>
-              )}
+            <div className="flex flex-row items-center justify-between gap-5">
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  {liveDemoLink && (
+                    <a
+                      href={liveDemoLink || "#"}
+                      target="_blank"
+                      className=" flex flex-row items-center gap-2 uppercase "
+                    >
+                      <Button
+                        variant={"ghost"}
+                        className="cursor-pointer h-12 w-12 uppercase bg-gradient-hover font-bold rounded-full "
+                      >
+                        <Link />
+                      </Button>
+                    </a>
+                  )}
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p className="text-md">Live project</p>
+                </TooltipContent>
+              </Tooltip>
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  {githubLink && (
+                    <a
+                      href={githubLink || "#"}
+                      target="_blank"
+                      className=" flex flex-row items-center gap-2 uppercase  "
+                    >
+                      <Button
+                        variant={"ghost"}
+                        className="cursor-pointer h-12 w-12 uppercase bg-gradient-hover font-bold rounded-full "
+                      >
+                        <Github />
+                      </Button>
+                    </a>
+                  )}
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p className="text-md">Github repository</p>
+                </TooltipContent>
+              </Tooltip>
             </div>
           </div>
         </CardContent>

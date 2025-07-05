@@ -30,7 +30,7 @@ const Wrapper: React.FC<WrapperProps> = ({
           {title && (
             <h2
               className={cn(
-                "text-white text-[26px] font-[900] text-center uppercase",
+                "text-white text-[33px] font-[900] text-center uppercase",
                 classNames?.title
               )}
             >

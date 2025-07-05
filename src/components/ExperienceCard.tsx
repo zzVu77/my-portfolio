@@ -61,7 +61,7 @@ const ExperienceCard = () => {
               <Tooltip>
                 <TooltipTrigger asChild>
                   <a href=" https://roshi.vn/" target="_blank">
-                    <Button className="rounded-full w-[36px] h-[36px] bg-gradient-to-r from-[#5badff]  to-[#1373d1] hover:transition-transform hover:scale-105 cursor-pointer">
+                    <Button className="rounded-full w-12 h-12 bg-gradient-to-r from-[#5badff]  to-[#1373d1] hover:transition-transform hover:scale-105 cursor-pointer">
                       <Link />
                     </Button>
                   </a>
@@ -73,7 +73,7 @@ const ExperienceCard = () => {
               <Tooltip>
                 <TooltipTrigger asChild>
                   <a href=" https://roshi.vn/" target="_blank">
-                    <Button className="rounded-full w-[36px] h-[36px] bg-gradient-to-r from-[#5badff]  to-[#1373d1] hover:transition-transform hover:scale-105 cursor-pointer">
+                    <Button className="rounded-full w-12 h-12 bg-gradient-to-r from-[#5badff]  to-[#1373d1] hover:transition-transform hover:scale-105 cursor-pointer">
                       <Link />
                     </Button>
                   </a>
