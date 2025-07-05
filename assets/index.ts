@@ -20,4 +20,7 @@ export const ASSSETS = {
   PROJECT_EPAPER: "/project-epaper.png",
   ROSHIVN_LOGO: "/roshivn.svg",
   FREELANCE_LOGO: "/freelance.png",
+  EXPRESSJS_LOGO: "/expressJS.svg",
+  MYSQL_LOGO: "/mysql.svg",
+  DOCKER_LOGO: "/docker.svg",
 };

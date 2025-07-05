@@ -43,6 +43,18 @@ const techData = [
     name: "Figma",
     icon: ASSSETS.FIGMA_LOGO,
   },
+  {
+    name: "MySQL",
+    icon: ASSSETS.MYSQL_LOGO,
+  },
+  {
+    name: "Docker",
+    icon: ASSSETS.DOCKER_LOGO,
+  },
+  {
+    name: "ExpressJS",
+    icon: ASSSETS.EXPRESSJS_LOGO,
+  },
 ];
 const Techs = () => {
   return (
@@ -74,7 +86,13 @@ const Techs = () => {
                                   ? "drop-shadow-[0_0_8px_#1572b6]"
                                   : tech.name === "Figma"
                                     ? "drop-shadow-[0_0_8px_#a259ff]"
-                                    : ""
+                                    : tech.name === "ExpressJS"
+                                      ? "drop-shadow-[0_0_8px_#fff]"
+                                      : tech.name === "MySQL"
+                                        ? "drop-shadow-[0_0_8px_#00758f]"
+                                        : tech.name === "Docker"
+                                          ? "drop-shadow-[0_0_8px_#2496ed]"
+                                          : ""
               }`}
               width={64}
               height={64}
