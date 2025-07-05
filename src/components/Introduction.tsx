@@ -15,7 +15,7 @@ const Introduction = ({ description, title }: Props) => {
         <div className="flex gap-4 flex-col xs:items-center xs:justify-center order-2 lg:order-1 w-full lg:max-w-[550px] ">
           {/* Text */}
           <div>
-            <h1 className="text-[76px] text-center lg:text-start font-extrabold text-white uppercase tracking-widest">
+            <h1 className="text-[76px] text-center lg:text-start font-extrabold text-white uppercase tracking-widest ">
               {title || "hi, i am vu"}
             </h1>
             <p className=" text-white/90 tracking-wide text-center lg:text-start font-[300] text-[16px]  w-full">

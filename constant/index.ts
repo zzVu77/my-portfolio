@@ -20,6 +20,23 @@ export const projectData = [
     githubLink: "https://github.com/zzVu77/HDmoVie",
     projectImage: ASSSETS.PROJECT_HDMOVIE,
   },
+
+  {
+    title: "Amirah Financial – Fintech Landing Page",
+    description:
+      "A freelance project to build a simple, modern landing page for a fintech startup. The project focuses on showcasing the brand's services with a clean, responsive UI and integrated email features. The landing page was developed based on a Figma design and implemented within a tight one-week timeline.",
+    duration: "06/2025 (1 week)",
+    techStack: ["Next.js", "TypeScript", "MUI", "Brevo"],
+    roles: ["Frontend Developer"],
+    keyAchievements: [
+      "Analyzed Figma design and translated UI mockups into reusable and structured React components.",
+      "Built a visually appealing, modern, and fully responsive landing page using Next.js, TypeScript, and MUI.",
+      "Integrated Brevo (formerly Sendinblue) for email subscription functionality directly within the site.",
+      "Delivered the project within a 1-week timeline, meeting all design and functionality requirements.",
+    ],
+    liveDemoLink: "https://amirah-finanical.vercel.app/",
+    projectImage: ASSSETS.PROJECT_AMIRAH,
+  },
   {
     title: "E-paper – Online News Platform with Role-Based Access",
     description:
@@ -45,22 +62,6 @@ export const projectData = [
     ],
     githubLink: "https://github.com/zzVu77/e-paper",
     projectImage: ASSSETS.PROJECT_EPAPER,
-  },
-  {
-    title: "Amirah Financial – Fintech Landing Page",
-    description:
-      "A freelance project to build a simple, modern landing page for a fintech startup. The project focuses on showcasing the brand's services with a clean, responsive UI and integrated email features. The landing page was developed based on a Figma design and implemented within a tight one-week timeline.",
-    duration: "06/2025 (1 week)",
-    techStack: ["Next.js", "TypeScript", "MUI", "Brevo"],
-    roles: ["Frontend Developer"],
-    keyAchievements: [
-      "Analyzed Figma design and translated UI mockups into reusable and structured React components.",
-      "Built a visually appealing, modern, and fully responsive landing page using Next.js, TypeScript, and MUI.",
-      "Integrated Brevo (formerly Sendinblue) for email subscription functionality directly within the site.",
-      "Delivered the project within a 1-week timeline, meeting all design and functionality requirements.",
-    ],
-    liveDemoLink: "https://amirah-finanical.vercel.app/",
-    projectImage: ASSSETS.PROJECT_AMIRAH,
   },
 ];
 export const experienceData = [

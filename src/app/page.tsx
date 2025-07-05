@@ -11,7 +11,9 @@ import AnimatedOnScroll from "@/components/MotionWrapper";
 export default function Home() {
   return (
     <>
-      <Wrapper classNames={{ container: "lg:pb-[80px]" }}>
+      <Wrapper
+        classNames={{ container: "lg:pb-[80px] md:px-[80px] items-stretch " }}
+      >
         <AnimatedOnScroll>
           <Introduction />
         </AnimatedOnScroll>
