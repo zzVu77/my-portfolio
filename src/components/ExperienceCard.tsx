@@ -22,7 +22,7 @@ const ExperienceCard = () => {
               ></Image>
             </div>
             {/*Role and Company name */}
-            <h3 className="font-[700] text-[24px]">
+            <h3 className="font-[800] text-[24px]">
               Lead Software Engineer at Google
             </h3>
           </div>
@@ -33,7 +33,7 @@ const ExperienceCard = () => {
         </div>
         <div className="flex flex-col gap-3">
           {/* Description */}
-          <p className="text-white/90 font-normal text-md ">
+          <p className="text-white/90 font-[600] text-md ">
             {` As a Senior Software Engineer at Google, I played a pivotal role in
             developing innovative solutions for Google's core search algorithms.
             Collaborating with a dynamic team of engineers, I contributed to the
@@ -42,7 +42,7 @@ const ExperienceCard = () => {
           </p>
           {/* Tech Stack */}
           <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-2 lg:gap-0">
-            <p className="text-white/90 font-normal">Tech Stack</p>
+            <p className="text-white/90 font-medium">Tech Stack</p>
             <div className="flex flex-row flex-wrap items-center justify-start gap-2">
               <Badge className="text-white/90 font-md text-sm bg-card-bg py-1  hover:transition-transform hover:scale-105 cursor-pointer ">
                 Hello

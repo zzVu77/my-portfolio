@@ -12,4 +12,7 @@ export const ASSSETS = {
   MUI_LOGO: "/mui-logo.svg",
   SHADCNUI_LOGO: "/shadcnui-logo.svg",
   FIGMA_LOGO: "/figma-logo.svg",
+  HCMUTE_LOGO: "/hcmute-logo.png",
+  TARGET_ICON: "/target_icon.png",
+  HOBBIES_ICON: "/hobbies-icon.png",
 };

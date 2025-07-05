@@ -4,6 +4,7 @@ import Introduction from "@/components/Introduction";
 import ProjectCard from "@/components/ProjectCard";
 import Techs from "@/components/Techs";
 import Wrapper from "@/components/Wrapper";
+import { ASSSETS } from "../../assets";
 const dummyProject = {
   title: "Adventure Time Landing Page",
   description:
@@ -83,36 +84,46 @@ export default function Home() {
         description="Learn more about my background, interests, and what drives my passion for web development."
         classNames={{
           title: "text-gradient-yellow ",
-          container: "gap-[50px] lg:gap-[80px]",
+          container: "gap-[50px] lg:gap-[80px] md:px-5",
         }}
       >
-        <div className="flex flex-col items-center justify-center gap-[30px] lg:gap-[50px]">
-          <InfoCard title="Education">
-            <h3 className="text-[20px] font-[600]">
+        <div className="flex flex-col lg:flex-row items-center justify-center gap-[30px] lg:gap-[50px]">
+          <InfoCard title="Education" imgSrc={ASSSETS.HCMUTE_LOGO}>
+            <h3 className="text-[20px] font-medium text-white text-center max-w-2xl">
               Ho Chi Minh City University of Technology and Education
             </h3>
-            <p className="text-[16px] font-normal text-white/70">
-              Software Engineering
+            <p className="text-[16px] font-light text-white/90 text-center max-w-2xl">
+              Currently a third-year student majoring in Software Engineering
+              with a GPA of{" "}
+              <strong className="text-white font-bold">3.25/4.0</strong>.
+              Building a strong foundation in programming and software
+              development, with hands-on experience in web technologies through
+              academic projects.
             </p>
-            <p className="text-[16px] font-normal text-white/70">GPA 3.5/4.0</p>
           </InfoCard>
-          <InfoCard title="Career Goals">
-            <h3 className="text-[20px] font-[600]">
-              Ho Chi Minh City University of Technology and Education
+          <InfoCard title="Career Goals" imgSrc={ASSSETS.TARGET_ICON}>
+            <h3 className="text-[20px] font-medium text-white text-center max-w-2xl">
+              As a passionate and dedicated Frontend Developer
             </h3>
-            <p className="text-[16px] font-normal text-white/70">
-              Software Engineering
+            <p className="text-[16px] font-light text-white/90 text-center max-w-2xl">
+              My <strong className="text-white font-bold">short-term</strong>
+              goal is to deepen my expertise in building responsive and
+              user-friendly interfaces. In the{" "}
+              <strong className="text-white font-bold">long term</strong>, I aim
+              to become a well-rounded fullstack developer, capable of handling
+              both client-side and server-side development efficiently.
             </p>
-            <p className="text-[16px] font-normal text-white/70">GPA 3.5/4.0</p>
           </InfoCard>
-          <InfoCard title="Hobbies">
-            <h3 className="text-[20px] font-[600]">
-              Ho Chi Minh City University of Technology and Education
+          <InfoCard title="Hobbies" imgSrc={ASSSETS.HOBBIES_ICON}>
+            <h3 className="text-[20px] font-medium text-white text-center max-w-2xl">
+              Sports, E-sports, and Photography
             </h3>
-            <p className="text-[16px] font-normal text-white/70">
-              Software Engineering
+            <p className="text-[16px] font-light text-white/90 text-center max-w-2xl">
+              {`Outside of coding, I enjoy staying active through sports 🏀 and
+              engaging in e-sports 🎮 for both fun and focus. I'm also passionate
+              about nature photography and photo editing 📸, which allow me to
+              express creativity and attention to detail beyond the screen.`}
             </p>
-            <p className="text-[16px] font-normal text-white/70">GPA 3.5/4.0</p>
           </InfoCard>
         </div>
       </Wrapper>

@@ -33,7 +33,7 @@ const ProjectCard = ({
   return (
     <>
       <Card className="bg-black p-0 m-0 border-0">
-        <CardContent className="flex flex-col items-center  lg:flex-row gap-10 p-0">
+        <CardContent className="flex flex-col items-start  lg:flex-row gap-10 p-0">
           <div
             className={cn(
               "bg-card-bg p-6 flex justify-center items-center rounded-xl h-auto w-full lg:min-w-[400px] max-w-[600px]",
@@ -74,7 +74,7 @@ const ProjectCard = ({
                 <div className="flex flex-col gap-3">
                   {/* Duration */}
                   <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-2 lg:gap-0">
-                    <p className="text-white/90 font-normal">Duration</p>
+                    <p className="text-white/90 font-bold">Duration</p>
                     <Badge className="text-white text-sm bg-card-bg py-1 font-bold hover:transition-transform hover:scale-105 cursor-pointer">
                       {duration || "  04/2025 - 06/2025"}
                     </Badge>
@@ -82,7 +82,7 @@ const ProjectCard = ({
                   <hr />
                   {/* Tech Stack */}
                   <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-2 lg:gap-0">
-                    <p className="text-white/90 font-normal">Tech Stack</p>
+                    <p className="text-white/90 font-bold">Tech Stack</p>
                     <div className="flex flex-row flex-wrap items-center justify-start gap-2">
                       {techStack?.map((tech, index) => (
                         <Badge
@@ -97,7 +97,7 @@ const ProjectCard = ({
                   <hr />
                   {/* Role */}
                   <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-2 lg:gap-0">
-                    <p className="text-white/90">Role</p>
+                    <p className="text-white/90 font-bold">Role</p>
                     <div className="flex flex-row flex-wrap items-center justify-start gap-2">
                       {roles?.map((role, index) => (
                         <Badge
@@ -112,7 +112,7 @@ const ProjectCard = ({
                   <hr />
                   {/* Key achievements */}
                   <div className="flex flex-col  items-start  justify-start gap-2 lg:gap-0">
-                    <p className="text-white/90">Key achievements</p>
+                    <p className="text-white/90 font-bold">Key achievements</p>
                     <ul className="list-disc list-inside marker:text-white ">
                       {keyAchievements?.map((achievement, index) => (
                         <li key={index} className="text-white/85 text-sm  mt-2">

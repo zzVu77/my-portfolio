@@ -18,9 +18,9 @@ const Introduction = ({ description, title }: Props) => {
             <h1 className="text-[76px] text-center lg:text-start font-extrabold text-white uppercase">
               {title || "hi, i am vu"}
             </h1>
-            <p className=" text-white text-center lg:text-start font-[200] text-[14px] w-full">
+            <p className=" text-white/90 tracking-wide text-center lg:text-start font-[300] text-[16px]  w-full">
               {description ||
-                "I am a software engineer with a passion for building web applications and exploring new technologies. I love creating efficient and scalable solutions that enhance user experiences. I am a software engineer with a passion for building web applications and exploring new technologies. I love creating efficient and scalable solutions that enhance user experiences "}
+                "I am a third-year student with a passion for building web applications and exploring new technologies. I love creating efficient and scalable solutions that enhance user experiences. I am a software engineer with a passion for building web applications and exploring new technologies. I love creating efficient and scalable solutions that enhance user experiences "}
             </p>
           </div>
           {/* button */}
