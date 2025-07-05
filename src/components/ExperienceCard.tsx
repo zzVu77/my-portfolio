@@ -8,8 +8,8 @@ import { Tooltip, TooltipContent, TooltipTrigger } from "./ui/tooltip";
 const ExperienceCard = () => {
   return (
     <>
-      <div className="w-full flex flex-col gap-4">
-        <div className="flex flex-row items-center justify-between">
+      <div className="w-full flex flex-col gap-5">
+        <div className="flex flex-col md:flex-row items-start justify-start md:items-center md:justify-between gap-4">
           <div className="flex flex-row items-center gap-3">
             {/* logo */}
             <div className="w-8 h-8">
@@ -31,7 +31,7 @@ const ExperienceCard = () => {
             Nov 2019 - Present
           </p>
         </div>
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-3">
           {/* Description */}
           <p className="text-white/90 font-normal text-md ">
             {` As a Senior Software Engineer at Google, I played a pivotal role in
@@ -57,7 +57,7 @@ const ExperienceCard = () => {
           </div>
           {/* Link products */}
           <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-2 lg:gap-0">
-            <div className="flex flex-row flex-wrap items-center justify-start gap-2">
+            <div className="flex flex-row flex-wrap items-center justify-start gap-5">
               <Tooltip>
                 <TooltipTrigger asChild>
                   <a href=" https://roshi.vn/" target="_blank">

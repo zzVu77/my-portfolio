@@ -1,4 +1,5 @@
 import ExperienceCard from "@/components/ExperienceCard";
+import InfoCard from "@/components/InfoCard";
 import Introduction from "@/components/Introduction";
 import ProjectCard from "@/components/ProjectCard";
 import Techs from "@/components/Techs";
@@ -26,13 +27,13 @@ export default function Home() {
   return (
     <>
       <Wrapper classNames={{ container: "lg:pb-[80px]" }}>
-        <Introduction></Introduction>
+        <Introduction />
       </Wrapper>
       <Wrapper
         title="EXPERIENCE WITH"
         classNames={{ title: "text-gradient-gray" }}
       >
-        <Techs></Techs>
+        <Techs />
       </Wrapper>
       <Wrapper
         title="My PROJECTS"
@@ -43,7 +44,6 @@ export default function Home() {
         }}
       >
         <ProjectCard
-          reverse={false}
           title={dummyProject.title}
           description={dummyProject.description}
           duration={dummyProject.duration}
@@ -52,7 +52,8 @@ export default function Home() {
           keyAchievements={dummyProject.keyAchievements}
           githubLink={dummyProject.githubLink}
           liveDemoLink={dummyProject.liveDemoLink}
-        ></ProjectCard>
+          reverse={true}
+        />
         <ProjectCard
           title={dummyProject.title}
           description={dummyProject.description}
@@ -63,7 +64,7 @@ export default function Home() {
           githubLink={dummyProject.githubLink}
           liveDemoLink={dummyProject.liveDemoLink}
           reverse={true}
-        ></ProjectCard>
+        />
       </Wrapper>
       <Wrapper
         title="Experience"
@@ -73,7 +74,47 @@ export default function Home() {
           container: "gap-[50px] lg:gap-[80px]",
         }}
       >
-        <ExperienceCard></ExperienceCard>
+        <ExperienceCard />
+        <ExperienceCard />
+        <ExperienceCard />
+      </Wrapper>
+      <Wrapper
+        title="About me"
+        description="Learn more about my background, interests, and what drives my passion for web development."
+        classNames={{
+          title: "text-gradient-yellow ",
+          container: "gap-[50px] lg:gap-[80px]",
+        }}
+      >
+        <div className="flex flex-col items-center justify-center gap-[30px] lg:gap-[50px]">
+          <InfoCard title="Education">
+            <h3 className="text-[20px] font-[600]">
+              Ho Chi Minh City University of Technology and Education
+            </h3>
+            <p className="text-[16px] font-normal text-white/70">
+              Software Engineering
+            </p>
+            <p className="text-[16px] font-normal text-white/70">GPA 3.5/4.0</p>
+          </InfoCard>
+          <InfoCard title="Career Goals">
+            <h3 className="text-[20px] font-[600]">
+              Ho Chi Minh City University of Technology and Education
+            </h3>
+            <p className="text-[16px] font-normal text-white/70">
+              Software Engineering
+            </p>
+            <p className="text-[16px] font-normal text-white/70">GPA 3.5/4.0</p>
+          </InfoCard>
+          <InfoCard title="Hobbies">
+            <h3 className="text-[20px] font-[600]">
+              Ho Chi Minh City University of Technology and Education
+            </h3>
+            <p className="text-[16px] font-normal text-white/70">
+              Software Engineering
+            </p>
+            <p className="text-[16px] font-normal text-white/70">GPA 3.5/4.0</p>
+          </InfoCard>
+        </div>
       </Wrapper>
     </>
   );
