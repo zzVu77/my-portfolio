@@ -1,6 +1,6 @@
 import { ASSSETS } from "../assets";
 
-export const dummyProject = [
+export const projectData = [
   {
     title: "HDMovie – Movie Information & Community Platform",
     description:
@@ -61,5 +61,35 @@ export const dummyProject = [
     ],
     liveDemoLink: "https://amirah-finanical.vercel.app/",
     projectImage: ASSSETS.PROJECT_AMIRAH,
+  },
+];
+export const experienceData = [
+  {
+    title: "Frontend Developer at ROSHI VN ( Part-time/Remote )",
+    logoSrc: ASSSETS.ROSHIVN_LOGO,
+    description:
+      "As a Frontend Developer, I was responsible for analyzing Figma designs provided by the UI/UX team and translating them into reusable React components with high fidelity to the original design ( pixel-perfect). I worked closely with designers and backend developers to ensure seamless integration, full responsiveness across devices, and a consistent, polished user experience.",
+    duration: "04/2025 - Present",
+    techStack: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "MUI",
+      "Payload CMS",
+    ],
+    linkProducts: [
+      "https://roshi.vn/",
+      "https://bestlicensedmoneylender.com.sg/",
+    ],
+  },
+  {
+    title: "Frontend Developer – B2B Landing Page (Freelance)",
+    logoSrc: ASSSETS.FREELANCE_LOGO,
+    description:
+      "As a Frontend Developer, I was responsible for designing the entire layout structure of the landing page and developing it using Next.js, TypeScript, and MUI. I collaborated directly with the client's marketing team to align design, content, and user flow, delivering a clean, responsive, and conversion-focused B2B website. The project was completed over a 2-month period with continuous feedback and iterations.",
+    duration: "02/2025 – 04/2025",
+    techStack: ["Next.js", "TypeScript", "MUI"],
+    linkProducts: ["https://diennuochoangkim.vn/"],
   },
 ];

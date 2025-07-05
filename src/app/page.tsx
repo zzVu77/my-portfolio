@@ -5,7 +5,7 @@ import ProjectCard from "@/components/ProjectCard";
 import Techs from "@/components/Techs";
 import Wrapper from "@/components/Wrapper";
 import { ASSSETS } from "../../assets";
-import { dummyProject } from "../../constant";
+import { experienceData, projectData } from "../../constant";
 
 export default function Home() {
   return (
@@ -28,7 +28,7 @@ export default function Home() {
             "gap-[50px] lg:gap-[80px] md:px-[100px] lg:px-[150px] xl:px-[300px] ",
         }}
       >
-        {dummyProject.map((project, index) => (
+        {projectData.map((project, index) => (
           <ProjectCard
             title={project.title}
             description={project.description}
@@ -48,12 +48,20 @@ export default function Home() {
         description="A showcase of my experience in real-world web development projects, highlighting key roles, responsibilities, and achievements."
         classNames={{
           title: "text-gradient-blue tracking-widest",
-          container: "gap-[50px] lg:gap-[80px]",
+          container: "gap-[50px] lg:gap-[80px] md:px-[150px]",
         }}
       >
-        <ExperienceCard />
-        <ExperienceCard />
-        <ExperienceCard />
+        {experienceData.map((experience, index) => (
+          <ExperienceCard
+            title={experience.title}
+            description={experience.description}
+            duration={experience.duration}
+            techStack={experience.techStack}
+            linkProducts={experience.linkProducts}
+            logoSrc={experience.logoSrc}
+            key={index}
+          />
+        ))}
       </Wrapper>
       <Wrapper
         title="About me"
