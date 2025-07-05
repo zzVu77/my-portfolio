@@ -1,3 +1,4 @@
+import ExperienceCard from "@/components/ExperienceCard";
 import Introduction from "@/components/Introduction";
 import ProjectCard from "@/components/ProjectCard";
 import Techs from "@/components/Techs";
@@ -63,6 +64,16 @@ export default function Home() {
           liveDemoLink={dummyProject.liveDemoLink}
           reverse={true}
         ></ProjectCard>
+      </Wrapper>
+      <Wrapper
+        title="Experience"
+        description="A showcase of my experience in real-world web development projects, highlighting key roles, responsibilities, and achievements."
+        classNames={{
+          title: "text-gradient-blue ",
+          container: "gap-[50px] lg:gap-[80px]",
+        }}
+      >
+        <ExperienceCard></ExperienceCard>
       </Wrapper>
     </>
   );

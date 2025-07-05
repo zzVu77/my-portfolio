@@ -66,10 +66,13 @@
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
 }
+* {
+  font-family: var(--font-overpass);
+}
 
 :root {
   --img-card-bg: #1a1a1a;
-  --description-text-color: #c7c7c7;
+  --description-text-color: #ffffff99;
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.141 0.005 285.823);
@@ -168,6 +171,12 @@
   }
   .text-gradient-orange {
     background: linear-gradient(90deg, #ff8660 0%, #d5491d 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .text-gradient-blue {
+    background: linear-gradient(90deg, #5badff 0%, #1373d1 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
