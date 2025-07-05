@@ -33,11 +33,11 @@ const ProjectCard = ({
   return (
     <>
       <Card className="bg-black p-0 m-0 border-0">
-        <CardContent className="flex flex-col items-start  lg:flex-row gap-10 p-0">
+        <CardContent className="flex flex-col items-center  gap-10 p-0">
           <div
             className={cn(
               "bg-card-bg p-6 flex justify-center items-center rounded-xl h-auto w-full lg:min-w-[400px] max-w-[600px]",
-              reverse === true && "lg:order-1"
+              reverse === true && ""
             )}
           >
             <Image
@@ -48,17 +48,17 @@ const ProjectCard = ({
               width={486}
               height={347}
               alt="project-img"
-              className="rounded-2xl w-full h-auto object-contain"
+              className="rounded-2xl w-full h-auto object-contain "
             ></Image>
           </div>
           {/* Detail of project */}
-          <div className="flex flex-col items-center lg:items-start gap-8 ">
+          <div className="flex flex-col items-center gap-8 ">
             <div className="flex flex-col gap-8">
               <div className="flex flex-col gap-4">
-                <h2 className="text-2xl font-[800] uppercase">
+                <h2 className="text-[24px] tracking-widest font-[800] uppercase text-center">
                   {title || "Promotional landing page for our favorite show"}
                 </h2>
-                <p className="text-white text-md font-normal ">
+                <p className="text-white text-md font-normal text-center ">
                   {description ||
                     `Teamed up with a designer to breathe life into a promotional
                   webpage for our beloved show, Adventure Time. Delivered a
@@ -68,8 +68,8 @@ const ProjectCard = ({
                 </p>
               </div>
               <div>
-                <h3 className="uppercase text-[20px] font-[600]">
-                  project info
+                <h3 className="uppercase text-[18px] font-[600] text-center tracking-wide text-gray-300">
+                  project information
                 </h3>
                 <div className="flex flex-col gap-3">
                   {/* Duration */}

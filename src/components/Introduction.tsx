@@ -15,12 +15,12 @@ const Introduction = ({ description, title }: Props) => {
         <div className="flex gap-4 flex-col xs:items-center xs:justify-center order-2 lg:order-1 w-full lg:max-w-[550px] ">
           {/* Text */}
           <div>
-            <h1 className="text-[76px] text-center lg:text-start font-extrabold text-white uppercase">
+            <h1 className="text-[76px] text-center lg:text-start font-extrabold text-white uppercase tracking-widest">
               {title || "hi, i am vu"}
             </h1>
             <p className=" text-white/90 tracking-wide text-center lg:text-start font-[300] text-[16px]  w-full">
               {description ||
-                "Currently a third-year student majoring in Software Engineering with a GPA of 3.5/4.0. Building a strong foundation in programming and software development, with hands-on experience in web technologies through academic projects. I have over 6 months of practical experience working with React and Next.js."}
+                "Currently a third-year student majoring in Software Engineering with a GPA of 3.25/4.0. Building a strong foundation in programming and software development, with hands-on experience in web technologies through academic projects. I have over 6 months of practical experience working with React and Next.js."}
             </p>
           </div>
           {/* button */}

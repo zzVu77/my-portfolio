@@ -15,4 +15,7 @@ export const ASSSETS = {
   HCMUTE_LOGO: "/hcmute-logo.png",
   TARGET_ICON: "/target_icon.png",
   HOBBIES_ICON: "/hobbies-icon.png",
+  PROJECT_HDMOVIE: "/project-hdmovie.png",
+  PROJECT_AMIRAH: "/project-amirah.png",
+  PROJECT_EPAPER: "/project-epaper.png",
 };
