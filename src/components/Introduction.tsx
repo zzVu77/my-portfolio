@@ -62,7 +62,7 @@ const Introduction = ({ description, title = "Hi there👋, I'm  " }: Props) => 
           >
             <span className="text-white">{title}</span> <br />
             <span className="text-gradient-pink">{displayText}</span>
-            <span className="text-white animate-pulse">|</span>
+            <span className="text-gradient-pink animate-pulse">|</span>
           </motion.h1>
 
           <p className="text-white/90 tracking-wide text-center lg:text-start font-[300] text-[16px] w-full">
