@@ -13,7 +13,7 @@ export default function Home() {
     <>
       <Wrapper
         classNames={{
-          container: "lg:pb-[80px] md:px-[80px] items-stretch md:pt-10",
+          container: "lg:pb-[80px] md:px-[80px] items-stretch pt-10",
         }}
       >
         <AnimatedOnScroll>
@@ -55,7 +55,7 @@ export default function Home() {
       </Wrapper>
 
       <Wrapper
-        title="Experience"
+        title="My Experience"
         description="A showcase of my experience in real-world web development projects."
         classNames={{
           title: "text-gradient-blue tracking-widest",

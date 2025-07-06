@@ -116,8 +116,8 @@ const Introduction = ({ description, title = "Hi there👋, I'm  " }: Props) => 
       <Image
         className="order-1 lg:order-2 scale-none md:scale-110"
         src={ASSSETS.AVATAR2}
-        width={200}
-        height={300}
+        width={250}
+        height={350}
         alt="avatar "
       />
     </div>
