@@ -187,6 +187,12 @@
     background-clip: text;
     color: transparent;
   }
+  .text-gradient-pink {
+    background: linear-gradient(90deg, #ff8660 0%, #9a33ff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
 
   .bg-gradient-hover {
     background-image: linear-gradient(90deg, #ff8660 0%, #d5491d 100%);

@@ -12,7 +12,9 @@ export default function Home() {
   return (
     <>
       <Wrapper
-        classNames={{ container: "lg:pb-[80px] md:px-[80px] items-stretch " }}
+        classNames={{
+          container: "lg:pb-[80px] md:px-[80px] items-stretch md:pt-10",
+        }}
       >
         <AnimatedOnScroll>
           <Introduction />
