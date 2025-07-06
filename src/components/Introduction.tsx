@@ -5,6 +5,7 @@ import { Button } from "./ui/button";
 import { ArrowUpRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { useEffect, useState, useMemo } from "react";
+import Link from "next/link";
 
 type Props = {
   title?: string;
@@ -73,29 +74,40 @@ const Introduction = ({ description, title = "Hi there👋, I'm  " }: Props) => 
 
         {/* button */}
         <div className="flex flex-col justify-center lg:flex-row lg:justify-start items-center gap-4 w-full">
-          <Button className="cursor-pointer h-[54px] w-max rounded-full bg-gradient-custom">
-            <div className="flex flex-row items-center gap-2 px-3">
-              <p className="font-semibold uppercase text-md">Contact me</p>
-              <ArrowUpRight />
-            </div>
-          </Button>
+          <Link href={"mailto:vunguyen77.dev@gmail.com"}>
+            <Button className="cursor-pointer h-[48px] w-max rounded-full bg-gradient-custom hover:transform hover:scale-105 transition-all duration-300">
+              <div className="flex flex-row items-center gap-2 px0">
+                <p className="font-semibold  text-[16px]">
+                  vunguyen77.dev@gmail.com
+                </p>
+                <ArrowUpRight />
+              </div>
+            </Button>
+          </Link>
           <div className="flex flex-row gap-4">
-            <Button className="cursor-pointer rounded-full w-[54px] h-[54px] bg-gradient-custom">
-              <Image
-                src={ASSSETS.LINKED_LOGO}
-                alt="linked logo"
-                height={32}
-                width={32}
-              />
-            </Button>
-            <Button className="cursor-pointer rounded-full w-[54px] h-[54px] bg-gradient-custom">
-              <Image
-                src={ASSSETS.GITHUB_LOGO}
-                alt="github logo"
-                height={32}
-                width={32}
-              />
-            </Button>
+            <Link
+              href={"https://www.linkedin.com/in/vunguyen77-dev/"}
+              target="_blank"
+            >
+              <Button className="cursor-pointer rounded-full w-[54px] h-[54px] bg-gradient-custom hover:transform hover:scale-105 transition-all duration-300">
+                <Image
+                  src={ASSSETS.LINKED_LOGO}
+                  alt="linked logo"
+                  height={32}
+                  width={32}
+                />
+              </Button>
+            </Link>
+            <Link href={"https://github.com/zzVu77"} target="_blank">
+              <Button className="cursor-pointer rounded-full w-[54px] h-[54px] bg-gradient-custom hover:transform hover:scale-105 transition-all duration-300">
+                <Image
+                  src={ASSSETS.GITHUB_LOGO}
+                  alt="github logo"
+                  height={32}
+                  width={32}
+                />
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
