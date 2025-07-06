@@ -55,7 +55,7 @@ export default function Home() {
       </Wrapper>
 
       <Wrapper
-        title="My Experience"
+        title="Work Experience"
         description="A showcase of my experience in real-world web development projects."
         classNames={{
           title: "text-gradient-blue tracking-widest",
