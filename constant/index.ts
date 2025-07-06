@@ -24,7 +24,7 @@ export const projectData = [
   {
     title: "Amirah Financial – Fintech Landing Page",
     description:
-      "A freelance project to build a simple, modern landing page for a fintech startup. The project focuses on showcasing the brand's services with a clean, responsive UI and integrated email features. The landing page was developed based on a Figma design and implemented within a tight one-week timeline.",
+      "A project to build a simple, modern landing page for a fintech startup. The project focuses on showcasing the brand's services with a clean, responsive UI and integrated email features. The landing page was developed based on a Figma design and implemented within a tight one-week timeline.",
     duration: "06/2025 (1 week)",
     techStack: ["Next.js", "TypeScript", "MUI", "Brevo"],
     roles: ["Frontend Developer"],
