@@ -56,7 +56,7 @@ export default function Home() {
 
       <Wrapper
         title="Experience"
-        description="A showcase of my experience in real-world web development projects, highlighting key roles, responsibilities, and achievements."
+        description="A showcase of my experience in real-world web development projects."
         classNames={{
           title: "text-gradient-blue tracking-widest",
           container: "gap-[50px] lg:gap-[80px] md:px-[150px]",
