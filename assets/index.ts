@@ -2,6 +2,8 @@ export const ASSSETS = {
   LINKED_LOGO: "/linked_logo.svg",
   GITHUB_LOGO: "/github_logo.svg",
   AVATAR: "/avatar.svg",
+  AVATAR1: "/avatar1.svg",
+  AVATAR2: "/avatar2.svg",
   CSS_LOGO: "/css-logo.svg",
   HTML_LOGO: "/html-logo.svg",
   JS_LOGO: "/javascript-logo.svg",

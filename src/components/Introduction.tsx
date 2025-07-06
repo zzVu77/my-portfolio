@@ -102,11 +102,11 @@ const Introduction = ({ description, title = "Hi there👋, I'm  " }: Props) => 
 
       {/* image */}
       <Image
-        className="order-1 lg:order-2"
-        src={ASSSETS.AVATAR}
-        width={300}
-        height={400}
-        alt="avatar"
+        className="order-1 lg:order-2 scale-none md:scale-110"
+        src={ASSSETS.AVATAR2}
+        width={200}
+        height={300}
+        alt="avatar "
       />
     </div>
   );
