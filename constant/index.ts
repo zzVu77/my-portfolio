@@ -69,7 +69,7 @@ export const experienceData = [
     title: "Frontend Developer at ROSHI VN ( Part-time/Remote )",
     logoSrc: ASSSETS.ROSHIVN_LOGO,
     description:
-      "As a Frontend Developer, I was responsible for analyzing Figma designs provided by the UI/UX team and translating them into reusable React components with high fidelity to the original design ( pixel-perfect). I worked closely with designers and backend developers to ensure seamless integration, full responsiveness across devices, and a consistent, polished user experience.",
+      "As a Frontend Developer, I was responsible for analyzing Figma designs provided by the UI/UX team and converting them into reusable React components with high fidelity to the original design ( pixel-perfect). I worked closely with designers and backend developers to ensure seamless integration, full responsiveness across devices, and a consistent, polished user experience.",
     duration: "04/2025 - Present",
     techStack: [
       "Next.js",
