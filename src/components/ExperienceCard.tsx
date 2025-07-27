@@ -10,6 +10,7 @@ type Props = {
   description?: string;
   duration?: string;
   techStack?: string[];
+  keyAchievements?: string[];
   linkProducts?: string[];
 };
 const ExperienceCard = ({
@@ -18,6 +19,7 @@ const ExperienceCard = ({
   description,
   duration,
   techStack,
+  keyAchievements,
   linkProducts,
 }: Props) => {
   return (
@@ -69,8 +71,21 @@ const ExperienceCard = ({
               ))}
             </div>
           </div>
+
+          <div className="flex flex-col items-start justify-start gap-2 lg:gap-0">
+            <p className="text-white/90 font-bold">Key Contributions</p>
+            <ul className="list-disc list-inside marker:text-white">
+              {keyAchievements?.map((achievement, index) => (
+                <li key={index} className="text-white/85 text-sm mt-2">
+                  {achievement}
+                </li>
+              ))}
+            </ul>
+          </div>
+
           {/* Link products */}
-          <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-2 lg:gap-0">
+          <div className="flex flex-col items-start justify-between gap-4">
+            <p className="text-white font-medium">Link Products</p>
             <div className="flex flex-row flex-wrap items-center justify-start gap-5">
               {linkProducts?.map((link, index) => (
                 <Tooltip key={index}>

@@ -97,18 +97,29 @@ export const experienceData = [
       "MUI",
       "Payload CMS",
     ],
+    keyAchievements: [
+      "Converted Figma designs into reusable React components with pixel-perfect accuracy.",
+      "Ensured smooth integration with backend APIs and maintained consistent UI/UX across the platform.",
+      "Reused and extended existing React components to build a more scalable and maintainable codebase.",
+      "Independently developed and implemented all pages of the project based on an existing project structure with a new design.",
+    ],
     linkProducts: [
       "https://roshi.vn/",
       "https://bestlicensedmoneylender.com.sg/",
     ],
   },
   {
-    title: "Frontend Developer – B2B Landing Page (Freelance)",
+    title: "Frontend Developer – Hoang Kim Landing Page (Freelance)",
     logoSrc: ASSSETS.FREELANCE_LOGO,
     description:
       "As a Frontend Developer, I was responsible for designing the entire layout structure of the landing page and developing it using Next.js, TypeScript, and MUI. I collaborated directly with the client's marketing team to align design, content, and user flow, delivering a clean, responsive, and conversion-focused B2B website. The project was completed over a 2-month period with continuous feedback and iterations.",
     duration: "02/2025 – 04/2025",
     techStack: ["Next.js", "React", "TypeScript", "MUI"],
+    keyAchievements: [
+      "Designed the entire layout structure of a B2B landing page from scratch, ensuring a clean and intuitive user flow.",
+      "Developed the landing page using Next.js, TypeScript, and Material UI with a strong focus on responsiveness and performance.",
+      "Collaborated directly with the client's marketing team to align design, content strategy, and conversion goals.",
+    ],
     linkProducts: ["https://diennuochoangkim.vn/"],
   },
 ];

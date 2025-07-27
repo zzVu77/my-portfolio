@@ -72,6 +72,7 @@ export default function Home() {
               techStack={experience.techStack}
               linkProducts={experience.linkProducts}
               logoSrc={experience.logoSrc}
+              keyAchievements={experience.keyAchievements}
             />
           </AnimatedOnScroll>
         ))}
