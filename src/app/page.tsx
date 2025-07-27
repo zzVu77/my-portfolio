@@ -34,7 +34,7 @@ export default function Home() {
         classNames={{
           title: "text-gradient-orange tracking-widest ",
           container:
-            "gap-[50px] lg:gap-[80px] md:px-[100px] lg:px-[150px] xl:px-[300px] ",
+            "gap-[50px] lg:gap-[80px] md:px-[80px] lg:px-[100px] xl:px-[150px] ",
         }}
       >
         {projectData.map((project, index) => (
@@ -49,6 +49,7 @@ export default function Home() {
               githubLink={project.githubLink}
               liveDemoLink={project.liveDemoLink}
               projectImage={project.projectImage}
+              reverse={index % 2 === 0} // Alternate the layout for each project
             />
           </AnimatedOnScroll>
         ))}
@@ -92,7 +93,7 @@ export default function Home() {
               <p className="text-[16px] font-light text-white/90 text-center max-w-2xl">
                 Currently a third-year student majoring in Software Engineering
                 with a GPA of{" "}
-                <strong className="text-white font-bold">3.25/4.0</strong>.
+                <strong className="text-white font-bold">3.27/4.0</strong>.
                 Building a strong foundation in programming and software
                 development, with hands-on experience in web technologies
                 through academic projects.
