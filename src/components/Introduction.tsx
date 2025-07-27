@@ -68,7 +68,7 @@ const Introduction = ({ description, title = "Hi there👋, I'm  " }: Props) => 
 
           <p className="text-white/90 tracking-wide text-center lg:text-start font-[300] text-[16px] w-full">
             {description ||
-              "Currently a third-year student majoring in Software Engineering with a GPA of 3.25/4.0. Building a strong foundation in programming and software development, with hands-on experience in web technologies through academic projects. I have over 6 months of practical experience working with React and Next.js. Basic understanding of SEO and web performance optimization. Passionate about creating user-friendly and efficient web applications."}
+              "Currently a third-year student majoring in Software Engineering with a GPA of 3.27/4.0. Building a strong foundation in programming and software development, with hands-on experience in web technologies through academic projects. I have over 6 months of practical experience working with React and Next.js. Basic understanding of SEO and web performance optimization. Passionate about creating user-friendly and efficient web applications."}
           </p>
         </div>
 
