@@ -20,6 +20,24 @@ export const projectData = [
     githubLink: "https://github.com/zzVu77/HDmoVie",
     projectImage: ASSSETS.PROJECT_HDMOVIE,
   },
+  {
+    title: "SimpleCrypto – Crypto Made Easy for Everyday Investors",
+    description:
+      "A side project developed by me and a senior full stack developer, aimed to build a web application designed to help beginners easily understand the cryptocurrency market. Built to simplify complex data and charts, the platform provides clear, easy-to-read insights to support smarter investment decisions. The project was developed with a focus on user-friendly UI/UX, aiming to make crypto more accessible to new users without requiring technical expertise.",
+    duration: "17/07/2025 - 27/07/2025",
+    techStack: ["React", "TypeScript", "TanStack Start", "Tailwind CSS"],
+    roles: ["Front-end Developer", "UI/UX Designer"],
+    keyAchievements: [
+      "Designed the user interface layout with a focus on clarity and simplicity to support beginners in crypto investing.",
+      "Converted Figma-style designs into reusable and responsive React components.",
+      "Coded the entire front-end of the website using modern React practices and Tailwind CSS for clean styling.",
+      "Integrated the CoinGecko API to fetch and display real-time data and detailed metrics for each cryptocurrency.",
+      "Ensured a mobile-friendly, fully responsive UI to improve accessibility across devices.",
+      "Optimized performance for dynamic data fetching and implemented state management for smooth user experience.",
+    ],
+    liveDemoLink: "https://simplecrypto.online/",
+    projectImage: ASSSETS.PROJECT_SIMPLECRYPTO,
+  },
 
   {
     title: "Amirah Financial – Fintech Landing Page",

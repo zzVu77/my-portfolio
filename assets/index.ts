@@ -20,6 +20,7 @@ export const ASSSETS = {
   PROJECT_HDMOVIE: "/project-hdmovie.png",
   PROJECT_AMIRAH: "/project-amirah.png",
   PROJECT_EPAPER: "/project-epaper.png",
+  PROJECT_SIMPLECRYPTO: "/project-simplecrypto.png",
   ROSHIVN_LOGO: "/roshivn.svg",
   FREELANCE_LOGO: "/freelance.png",
   EXPRESSJS_LOGO: "/expressJS.svg",

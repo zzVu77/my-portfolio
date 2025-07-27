@@ -151,7 +151,7 @@ const ProjectCard = ({
                       {/* Achievements */}
                       <div className="flex flex-col items-start justify-start gap-2 lg:gap-0">
                         <p className="text-white/90 font-bold">
-                          Key achievements
+                          Key Contributions & Achievements
                         </p>
                         <ul className="list-disc list-inside marker:text-white">
                           {keyAchievements?.map((achievement, index) => (
