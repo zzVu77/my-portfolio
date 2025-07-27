@@ -101,7 +101,7 @@ const ProjectCard = ({
                     exit={{
                       opacity: 0,
                       y: 0,
-                      transition: { duration: 0.1, ease: "easeOut" },
+                      transition: { duration: 0.2, ease: "easeOut" },
                     }}
                     transition={{ duration: 0.4, ease: "easeInOut" }}
                     className="px-4 md:px-[150px] w-full"
