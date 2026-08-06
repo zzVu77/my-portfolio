@@ -1,14 +1,11 @@
 /**
  * Meta Pixel (Facebook Pixel) helpers.
  *
- * Pixel ID được đọc từ biến môi trường NEXT_PUBLIC_FACEBOOK_PIXEL_ID.
- * Vì có tiền tố NEXT_PUBLIC_ nên biến này được inline vào bundle phía client.
+ * Pixel ID hardcode trực tiếp. Pixel ID không phải secret — ai xem source
+ * trang web cũng thấy được — nên không cần đưa vào biến môi trường.
+ * Muốn đổi sang pixel khác thì sửa thẳng hằng số dưới đây.
  */
-/** Pixel ID mặc định. Ghi đè được bằng env NEXT_PUBLIC_FACEBOOK_PIXEL_ID. */
-const DEFAULT_PIXEL_ID = "1058109840003701";
-
-export const FB_PIXEL_ID =
-  process.env.NEXT_PUBLIC_FACEBOOK_PIXEL_ID || DEFAULT_PIXEL_ID;
+export const FB_PIXEL_ID = "1058109840003701";
 
 type FbqFn = (
   method: "init" | "track" | "trackCustom" | "consent",
@@ -24,7 +21,8 @@ declare global {
 }
 
 /** true khi script fbevents.js đã được base code khởi tạo. */
-const ready = () => typeof window !== "undefined" && typeof window.fbq === "function";
+const ready = () =>
+  typeof window !== "undefined" && typeof window.fbq === "function";
 
 /**
  * Bắn PageView. Base code đã tự bắn 1 lần khi load,
