@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Overpass } from "next/font/google";
 import "./globals.css";
 import SplashCursor from "@/components/animate/SplashCursor ";
+import MetaPixel from "@/components/MetaPixel";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -34,6 +35,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${overPass.variable} antialiased`}
       >
+        <MetaPixel />
         <SplashCursor />
         {children}
       </body>
