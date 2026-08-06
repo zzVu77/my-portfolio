@@ -13,9 +13,6 @@ import { FB_PIXEL_ID } from "@/lib/fpixel";
  * PageView với những trình duyệt tắt JavaScript.
  */
 export default function MetaPixel() {
-  // Không render gì nếu chưa cấu hình Pixel ID.
-  if (!FB_PIXEL_ID) return null;
-
   return (
     <>
       {/* Meta Pixel Code */}
